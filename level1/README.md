@@ -1,6 +1,3 @@
-Parfait ! Voici un **plan de cours complet sur Git avec Bitbucket**, accompagné d’**exercices pratiques** avec leurs **corrections**. Ce plan est idéal pour un atelier de 3 à 4 heures.
-
----
 
 # 🧑‍🏫 Plan de cours : Git avec Bitbucket
 
@@ -64,15 +61,39 @@ git merge feature-hello
 Vérifiez que le message de la branche feature est présent dans `README.md`.
 
 ---
+## 🔹 Partie 3 : Merge et Rebase
 
-## 🔹 Partie 3 : Introduction à Bitbucket (20 min)
+### 🔍 Objectifs :
+
+* Créer et basculer entre des branches
+* Fusionner des branches
+
+### 🧑‍💻 Activité 3 : Création et fusion de branches
+
+#### **Instructions :**
+
+```bash
+git checkout -b feature-hello
+echo "Hello depuis feature" >> README.md
+git commit -am "Ajout message dans feature"
+git checkout main
+git merge feature-hello
+```
+
+#### ✅ Correction :
+
+Vérifiez que le message de la branche feature est présent dans `README.md`.
+
+---
+
+## 🔹 Partie 4 : Introduction à Bitbucket (20 min)
 
 ### 🔍 Objectifs :
 
 * Créer un dépôt distant sur Bitbucket
 * Lier le dépôt local à Bitbucket
 
-### 🧑‍💻 Activité 3 : Lien dépôt local ↔ distant
+### 🧑‍💻 Activité 4 : Lien dépôt local ↔ distant
 
 #### **Instructions :**
 
@@ -90,7 +111,7 @@ Sur Bitbucket, vérifiez que les fichiers ont bien été poussés.
 
 ---
 
-## 🔹 Partie 4 : Collaboration avec Bitbucket (1h)
+## 🔹 Partie 5 : Collaboration avec Bitbucket (1h)
 
 ### 🔍 Objectifs :
 
@@ -98,7 +119,7 @@ Sur Bitbucket, vérifiez que les fichiers ont bien été poussés.
 * Faire une pull request (PR)
 * Gérer une revue de code
 
-### 🧑‍💻 Activité 4 : Travailler avec une PR
+### 🧑‍💻 Activité 5 : Travailler avec une PR
 
 #### **Instructions :**
 
@@ -122,14 +143,14 @@ Vérifiez que `footer.html` est bien intégré dans `main`.
 
 ---
 
-## 🔹 Partie 5 : Résolution de conflits (30 min)
+## 🔹 Partie 6 : Résolution de conflits (30 min)
 
 ### 🔍 Objectifs :
 
 * Gérer les conflits de fusion
 * Comprendre les causes et solutions
 
-### 🧑‍💻 Activité 5 : Simuler un conflit
+### 🧑‍💻 Activité 6 : Simuler un conflit
 
 #### **Instructions :**
 
@@ -169,7 +190,7 @@ Le fichier doit contenir la version fusionnée manuellement.
 
 ---
 
-## 🔹 Partie 6 : Bonnes pratiques (10 min)
+## 🔹 Partie 7 : Bonnes pratiques (10 min)
 
 * Une branche = une fonctionnalité
 * Commits clairs et fréquents
